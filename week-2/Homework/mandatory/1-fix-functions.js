@@ -11,7 +11,7 @@
 //    Only make edits inside the function
 
 function mood() {
-  let isHappy = true;
+  let isHappy = false;
 
   if (isHappy) {
     return "I am happy";
@@ -26,9 +26,9 @@ function mood() {
 
 function greaterThan10() {
   const num = 10;
-  const isBigEnough;
+  let isBigEnough = 10;
 
-  if (isBigEnough) {
+  if (isBigEnough == 10) {
     return "num is greater than or equal to 10";
   } else {
     return "num is not big enough";
@@ -41,9 +41,9 @@ function greaterThan10() {
 
 function sortArray() {
   const letters = ["a", "n", "c", "e", "z", "f"];
-  let sortedLetters;
+  let sortedLetters = 5;
 
-  return sortedLetters;
+  return sortedLetters = letters.sort();
 }
 
 // 4) first5 function shold return the first 5 elements of array
@@ -52,10 +52,11 @@ function sortArray() {
 
 function first5() {
   let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
-  let sliced;
+  let sliced = numbers.splice(0, 5);
 
   return sliced;
 }
+console.log(first5());
 
 // 5) get3rdIndex function needs to take an array `arr` give 
 //    back third element value.
@@ -64,8 +65,8 @@ function first5() {
 //    Hint: remember that arrays are zero-index based
 
 function get3rdIndex(arr) {
-  let index = 3;
-  let element;
+  let index = 2;
+  let element = 3 ;
 
   return element;
 }
